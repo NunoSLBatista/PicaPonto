@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PicaPonto</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_registos">Picagens</string>
+    <string name="title_today">Home</string>
+    <string name="title_ferias">Férias</string>
+    <string name="auth_title"> Authenticate </string>
+    <string name="auth_success">Congratulation ! You have Successfully Authorization has</string>
+    <string name="aut_fail">Authorization is not Success</string>
+    <string name="msg"> Sweep on your Fingerprint to Authorize</string>
+    <string name="btn_auth">Sweep</string>
+
+    <string name="action_today">Hoje</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_close">Fechar</string>
+    <string name="action_select">Selecionar</string>
+
+    <string name="prime_date_picker_selected_day">Selecionar Dia</string>
+    <string name="prime_date_picker_from">Desde</string>
+    <string name="prime_date_picker_to">Até</string>
+</resources>

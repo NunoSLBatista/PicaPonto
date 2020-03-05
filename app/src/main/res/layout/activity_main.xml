@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.picaponto.app.MainActivity">
+
+
+    <TextView
+        android:id="@+id/messageHome"
+        android:layout_width="331dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/picagensBtn"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#8AC34B"
+            android:text="Entrada"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/scheduleBtn"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#F6BC0C"
+            android:text="Saída"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/optionsBtn"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#9AAAB5"
+            android:text="Opções"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#9AAAB5"
+            android:text="Sair"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></Button>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagemHome"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toStartOf="@+id/labelTipoHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageHome"
+        app:srcCompat="@drawable/entry" />
+
+    <TextView
+        android:id="@+id/labelTipoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imagemHome"
+        app:layout_constraintTop_toBottomOf="@+id/messageHome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

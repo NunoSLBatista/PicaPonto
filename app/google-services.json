@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "594653127866",
+    "firebase_url": "https://instatravel-1572311191764.firebaseio.com",
+    "project_id": "instatravel-1572311191764",
+    "storage_bucket": "instatravel-1572311191764.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594653127866:android:4024200d3b0a21e7540e83",
+        "android_client_info": {
+          "package_name": "pt.picaponto.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594653127866-tvukl93ht65psg8oaug3pjotsuoih9jm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pt.picaponto.app",
+            "certificate_hash": "1daf9e450e622a8fc8a699b35d43edabf8e15e98"
+          }
+        },
+        {
+          "client_id": "594653127866-l7h8thtpc5a2norghorpanc9aht7btuk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0qzQkhFo8h1ts_7c7uHQfJ9OkDSibERA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594653127866-l7h8thtpc5a2norghorpanc9aht7btuk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
