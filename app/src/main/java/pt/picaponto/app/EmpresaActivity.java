@@ -21,6 +21,11 @@ import pt.picaponto.app.Models.Dia;
 import pt.picaponto.app.Models.Ferias;
 import pt.picaponto.app.Models.Periodo;
 import pt.picaponto.app.Models.Registo;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 
 import org.json.JSONArray;
@@ -55,7 +60,7 @@ public class EmpresaActivity extends AppCompatActivity  {
         if(sharedPreferences.contains("codigo-empresa")) {
 
             if (isNetworkAvailable()) {
-                    syncRecords();
+                syncRecords();
                 updateData();
             }
 
@@ -86,7 +91,8 @@ public class EmpresaActivity extends AppCompatActivity  {
 
         ColaboradorInterface api = retrofit.create(ColaboradorInterface.class);
 
-        Call<String> call = api.getData("token");
+        sharedPreferences = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
+        Call<String> call = api.getData(sharedPreferences.getString("codigo-empresa", ""));
 
         call.enqueue(new Callback<String>() {
             @Override
@@ -107,6 +113,7 @@ public class EmpresaActivity extends AppCompatActivity  {
 
                             if(check == "false"){
                             } else {
+                                Log.d("Updated", "data");
                                 parseLoginData(jsonresponse);
                             }
 
@@ -502,6 +509,7 @@ public class EmpresaActivity extends AppCompatActivity  {
 
         Call<String> call = api.getData(codigoEdit.getText().toString());
 
+
         call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
@@ -651,4 +659,8 @@ public class EmpresaActivity extends AppCompatActivity  {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }

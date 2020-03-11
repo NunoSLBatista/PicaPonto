@@ -95,6 +95,11 @@ class MainActivity : AppCompatActivity(), InternetConnectivityListener {
 
     }
 
+    override fun onBackPressed() {
+        if(0 == 1){
+            super.onBackPressed()
+        }
+    }
 
     override fun onResume() {
         // 1

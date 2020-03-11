@@ -38,7 +38,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context,
 
     fun updateData(){
         val db = this.writableDatabase
-
         db.execSQL("DELETE FROM $TABLE_PICAGENS")
         db.execSQL("DELETE FROM $TABLE_COL")
         db.execSQL("DELETE FROM $TABLE_EMPRESA")

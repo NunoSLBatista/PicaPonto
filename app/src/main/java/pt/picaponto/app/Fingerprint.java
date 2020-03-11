@@ -50,7 +50,6 @@ public class Fingerprint extends AppCompatActivity implements GoogleApiClient.Co
 
         tipoEntrada = getIntent().getStringExtra("tipoEntrada");
 
-
           BiometricCallback callback =  new BiometricCallback() {
                 @Override
                 public void onSdkVersionNotSupported() {
@@ -194,7 +193,7 @@ public class Fingerprint extends AppCompatActivity implements GoogleApiClient.Co
         }
         else if (!_fingerprintManager.hasEnrolledFingerprints())
         {
-            changeScreenFace();
+            //changeScreenFace();
             return false;
         }
         else
